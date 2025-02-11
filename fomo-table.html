@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomo Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .comparison-table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: auto;
+        }
+        .table-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            border-bottom: 1px solid #eee;
+        }
+        .table-header {
+            background: #07889B;
+            color: white;
+            font-weight: 600;
+            padding: 16px;
+        }
+        .table-cell {
+            padding: 16px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .icon-check {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .icon-times {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .cta-container {
+            margin-top: 20px;
+        }
+        .upgrade-button {
+            background: #D48639;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .upgrade-button:hover {
+            background: #c07732;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="comparison-table">
+        <div class="table-row table-header">
+            <div class="table-cell">Features</div>
+            <div class="table-cell">Free Members</div>
+            <div class="table-cell">Paid Members (£29.99/mo)</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">CPD Accredited Core of Knowledge</div>
+            <div class="table-cell icon-times">✕</div>
+            <div class="table-cell icon-check">✓</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Exclusive Facebook Group</div>
+            <div class="table-cell icon-times">✕</div>
+            <div class="table-cell icon-check">✓</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">24/7 WhatsApp Support</div>
+            <div class="table-cell icon-times">✕</div>
+            <div class="table-cell icon-check">✓</div>
+        </div>
+    </div>
+
+    <div class="cta-container">
+        <a href="#" class="upgrade-button">Upgrade Now!</a>
+    </div>
+</body>
+</html>
